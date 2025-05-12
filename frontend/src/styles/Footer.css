@@ -1,0 +1,23 @@
+.footer{
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.logo{
+    
+    margin-right: 200px;
+}
+
+.logo h1{
+    font-size: 64px;
+}
+
+.footer-quick-links {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
