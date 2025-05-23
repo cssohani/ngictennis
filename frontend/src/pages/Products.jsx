@@ -1,5 +1,6 @@
-import React from 'react'
+import {useState, useEffect } from 'react'
 import '../styles/Products.css'
+import axios from 'axios'
 
 const productItems = [
   {
@@ -39,6 +40,19 @@ const productItems = [
   }
 ]
 const Products = () => {
+  const [products, setProducts] = useState([])
+  const getProducts = async () => {
+    const response = await axios.get("http://localhost:8080/products");
+    console.log(response);
+    setProducts(response.data || null);
+  }
+  
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+  console.log(products);
+
   return (
     <>
       <div className="products-container">
@@ -47,13 +61,14 @@ const Products = () => {
           <div className="product-section">
             {productItems.map((product, index) => (
               <div key={index} className="product-item">
-                <a key={product.id} className="group">
+                <div key={product.id} className="group">
                   <img
                     src={`/images/${product.imgSrc}`}
                   />
                   <h3>{product.price}</h3>
                   <p>{product.name}</p>
-              </a>
+                  <button>Add to Cart</button>
+                </div>
               </div>
             ))}
           </div>

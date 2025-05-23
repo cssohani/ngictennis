@@ -2,7 +2,7 @@ package com.ngictennis.ecommerce.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-//import java.util.List;
+import java.util.List;
 
 import org.springframework.stereotype.Service;
 
@@ -15,9 +15,9 @@ public class ProductService {
     @Autowired
     public ProductRepository productRepository;
 
-    // public List<Product> getProducts() {
-    // return productRepository.findAll();
-    // }
+    public List<Product> getProducts() {
+        return productRepository.findAll();
+    }
 
     public Product addProduct(Product product) {
         return productRepository.save(product);

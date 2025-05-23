@@ -1,21 +1,25 @@
 package com.ngictennis.ecommerce.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name = "coaching_plans")
 public class CoachingPlan {
     @Id
     @GeneratedValue
-    private String id;
+    private Long id;
     private String name;
     private double price;
     private String description;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

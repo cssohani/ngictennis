@@ -14,7 +14,7 @@ const Coaching = () => {
       <div className="plans-container">
         <div className="plans">
           <div className="plan-card">
-            <h1>Basic</h1>
+            <h1>Beginner</h1>
             <ul>
               <li>Tennis rules and scoring</li>
               <li>Basic shot techniques</li>

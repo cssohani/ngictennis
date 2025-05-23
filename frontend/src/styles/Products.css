@@ -22,3 +22,11 @@
     border-radius: 15px;
 
 }
+
+.product-item button {
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(196, 86, 3);
+}
