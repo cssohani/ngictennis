@@ -1,0 +1,94 @@
+.cart-container {
+    padding: 20px;
+}
+.cart-bg {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    border-top: solid lightgray 1px;
+    
+}
+
+.item {
+    display: flex;
+    width: 900px;
+    height: auto;
+    border-bottom: solid lightgray 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    
+}
+
+.item-img img {
+    width: 140px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.item-details {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.item-details button {
+    height: 40px;
+    background-color: white;
+    border: none;
+    width: 40px;
+}
+
+.cost-section {
+    background-color: lightblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    padding-right: 50px;
+}
+
+.cost-section button{
+    width: 50%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.checkout-button {
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+
+.price-info {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price-info p {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+

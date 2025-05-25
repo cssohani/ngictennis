@@ -6,6 +6,8 @@
     align-items: center
 }
 
+
+
 .navlinks {
     justify-content: space-between;
 
@@ -36,7 +38,19 @@
     color: black;
 }
 
-.logo h1{
+.logo a{
+
+    text-decoration: none;
+}
+
+.logo a:visited{
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+.logo h1 {
     font-size: 12px;
     padding: 15px;
     margin-left: 20px;
